@@ -1,14 +1,27 @@
 
+"use client"
+
+
+import {React,  useEffect}  from 'react'
 import { Container } from '@mui/material'
-import React from 'react'
 import Icon from '../Icon'
 import Info from '../Info'
 import Countries from '../Countries'
 
 
+function Card({goal, country1, country2, country3, country4, country5}) {
 
+  //const { country1, goal } = props;
 
-function Card(goal) {
+  //const [country1, setCountry1] = useState(country1)
+
+  // useEffect(() => {
+  //  console.log("country1 in Card")
+  //   console.dir(country1)
+
+  //   ,[country1]
+  // })
+
   
   return (
     <div>
@@ -24,9 +37,17 @@ function Card(goal) {
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-        <Icon></Icon>
+        <Icon code={goal.code}></Icon>
         <Info goal={goal}></Info>
-        <Countries></Countries>
+        
+         {(country1 != null && country1 != undefined) && 
+
+        //country1.name
+         <Countries country1={country1} country2={country2} country3={country3} country4={country4} country5={country5}
+        /> } 
+        
+     
+
       </Container>
     </div>
   )

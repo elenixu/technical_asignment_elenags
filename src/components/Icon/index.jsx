@@ -1,11 +1,21 @@
 'use client';
 
 import { Container } from '@mui/material';
-import React from 'react';
-import Icon1 from '../../assets/pngs/sdg1-white.png'
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { listIcons } from '@/assets/pngs/listIcons';
+import defaultIcon from '../../assets/pngs/sdg1-white.png';
 
-function Icon() {
+function Icon(goal) {
+
+
+  const [icon, setIcon] = useState(defaultIcon);
+
+  useEffect(() => {
+       setIcon(listIcons.filter((icon) => icon.code === goal.code)[0].icon);
+  }, []); 
+
+  
   
   return (
     <Container
@@ -20,7 +30,7 @@ function Icon() {
         backgroundColor: '#78D67C',
       }}
     >
-     <Image src={Icon1} alt='Icon 1' width="128px" height="128px" />
+     <Image src={icon} alt={`Icon ${goal.code}`} width="128" height="128" />
     </Container>
   );
 }

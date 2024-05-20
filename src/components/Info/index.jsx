@@ -18,6 +18,7 @@ function Info({ goal }) {
           background: 'var(--Gray-2, #F7F6FA)',
         }}
       >
+
             <Typography variant="biotitle">
               {goal.title}
             </Typography>
