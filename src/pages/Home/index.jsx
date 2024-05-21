@@ -185,12 +185,7 @@ fetchDataByCountries();
     <div>
       <Container>
         Here are the 17 sustainable development goals:
-        {(country1 != null && country1 != undefined) && country1.attributes.Name} 
-        {(country2 != null && country2 != undefined) && country2.attributes.Name} 
-        {(country3 != null && country3 != undefined) && country3.attributes.Name} 
-        {(country4 != null && country4 != undefined) && country4.attributes.Name} 
-        {(country5 != null && country5 != undefined) && country5.attributes.Name} 
-
+       
          {goals.map((goal) => {
           return(
           
