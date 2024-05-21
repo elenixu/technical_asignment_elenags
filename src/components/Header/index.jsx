@@ -1,5 +1,5 @@
 import React from 'react'
-import LogoHeader from '../../assets/logo/SDSN-logo 1.png'
+import LogoHeader from '../../assets/logo/SDSN-logo 1.webp'
 import Image from 'next/image'
 import { Container } from '@mui/material'
 

@@ -1,6 +1,6 @@
 import { Box, Container, Typography } from '@mui/material'
 import React from 'react'
-import LogoFooter from '../../assets/logo/logo_white.png'
+import LogoFooter from '../../assets/logo/logo_white.webp'
 import Image from 'next/image'
 
 function Footer() {

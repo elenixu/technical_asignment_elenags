@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Technical Assessment Test for the Junior Web Developer Position at SDSN
 
-## Getting Started
+## Project Title:
+Technical assessment test for the junior web developer position at SDSN.
 
-First, run the development server:
+## Description
+This project is a Single Page Application built using Next.js and React, along with the MUI library. It aims to display information related to the 17 Sustainable Development Goals (SDGs), including icons for each goal, bio information fetched from an API, and scores, ratings, and trends per goal for selected countries.
 
-```bash
+## Installation
+
+1. **Ensure you have Node.js and npm installed on your machine.**
+2. **Clone the repository:**
+   ```bash
+   git clone https://github.com/elenixu/technical_asignment_elenags
+Navigate to the project directory:
+bash
+Copy code
+cd technical_asignment_elenags
+Install dependencies:
+bash
+Copy code
+npm install
+Run the development server:
+bash
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Open your browser and visit http://localhost:3000 to view the application.
+Problems I Encountered
+Issue Importing SVG Files in Next.js
+Problem: There was an issue importing the SVG files.
+Solution: Optimized the website by converting the SVG files into WebP format, following best practices for image optimization.
+Fetching Country Data
+Problem: The information of each country's goals, ratings, and scores was difficult to fetch because the backend JSON structure had all data at the same level.
+Solution: Rendered the SDG goals along with relevant country data using the Card component to organize and display the information effectively.
+Infinite Loop in Array
+Problem: The array was infinitely looping in the console.
+Solution: Fixed it by ensuring the dependency array for the useEffect hook was correctly managed, preventing the infinite loop.
