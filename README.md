@@ -36,6 +36,12 @@ This project is a Single Page Application built using Next.js and React, along w
 
 -Solution: Fixed it by adding an empty dependency array so that the useEffect hook was correctly managed, preventing the infinite loop.
 
+4. **Problem using the function getColor from SDG on the Goal code**
+
+-Problem: The SDG backround color was not being read by the function getColor.
+
+-Solution: The function getColor could not read the SDG info because it came back as a string, and it needed to be a number(integer) according to the getColor documentation. The issue was resolve by passing a parseInt.
+
 ## Possible improovements:
 
 1. **Directly connect the SVG files from the API.**
