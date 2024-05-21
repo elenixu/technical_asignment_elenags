@@ -35,3 +35,5 @@ Solution: Rendered the SDG goals along with relevant country data using the Card
 Infinite Loop in Array
 Problem: The array was infinitely looping in the console.
 Solution: Fixed it by ensuring the dependency array for the useEffect hook was correctly managed, preventing the infinite loop.
+
+Here is a Figma file of a very quick visualisation maquette I did for the website: https://www.figma.com/design/MvGC4HhpfWQ07nsifv8tSy/card_maquette?m=dev&node-id=0%3A1&t=uDGkJz3uxDw2Uuyz-1
