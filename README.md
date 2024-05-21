@@ -19,16 +19,19 @@ This project is a Single Page Application built using Next.js and React, along w
 
 ## Problems I Encountered
 1. **Issue Importing SVG Files in Next.js**
+
 -Problem: There was an issue importing the SVG files.
 
 -Solution: Optimized the website by converting the SVG files into WebP format, following best practices for image optimization.
 
 2. **Fetching Country Data**
+
 -Problem: The information of each country's goals, ratings, and scores was difficult to fetch because the backend JSON structure had all data at the same level.
 
 -Solution: Rendered the SDG goals along with relevant country data using the Card component to organize and display the information effectively.
 
 3. **Infinite Loop in Array**
+
 -Problem: The array was infinitely looping in the console.
 
 -Solution: Fixed it by ensuring the dependency array for the useEffect hook was correctly managed, preventing the infinite loop.
