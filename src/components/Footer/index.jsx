@@ -12,6 +12,7 @@ function Footer() {
         width: '100%',
         height: 'auto',
         margin: '0',
+        padding: '0',
       }}>
         <Container sx={{
         display: 'flex',

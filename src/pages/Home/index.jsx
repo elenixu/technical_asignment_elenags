@@ -1,7 +1,7 @@
 "use client"
 
 import Card from '@/components/Card';
-import { Container } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 
 function Home() {
@@ -184,12 +184,12 @@ fetchDataByCountries();
   return (
     <div>
       <Container>
-        Here are the 17 sustainable development goals:
+        <Typography variant="introtext">Here are the 17 sustainable development goals:</Typography>  
        
          {goals.map((goal) => {
           return(
           
-          <Card key={goal.code} 
+          <Card  key={goal.code} 
           goal={{code:goal.code, title:goal.title , description : goal.description}} 
           country1={{
             name:country1.attributes.Name, 

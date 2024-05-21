@@ -11,18 +11,6 @@ import Countries from '../Countries'
 
 function Card({goal, country1, country2, country3, country4, country5}) {
 
-  //const { country1, goal } = props;
-
-  //const [country1, setCountry1] = useState(country1)
-
-  // useEffect(() => {
-  //  console.log("country1 in Card")
-  //   console.dir(country1)
-
-  //   ,[country1]
-  // })
-
-  
   return (
     <div>
     <Container sx={{
@@ -33,7 +21,10 @@ function Card({goal, country1, country2, country3, country4, country5}) {
         background: '#FFF',
         display: 'flex',
         flexWrap: 'wrap',
-        gap: '43px',
+        gap: '20px',
+        padding: '20px',
+        marginTop: '35px',
+        marginBottom: '35px',
         justifyContent: 'center',
         alignItems: 'center',
       }}>

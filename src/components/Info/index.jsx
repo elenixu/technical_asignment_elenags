@@ -8,7 +8,7 @@ function Info({ goal }) {
         sx={{
           display: 'flex',
           width: '576px',
-          height: '158px',
+          
           padding: '16px',
           flexDirection: 'column',
           alignItems: 'flex-start',

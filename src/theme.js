@@ -60,9 +60,18 @@ export const theme = createTheme({
             lineHeight: 'normal',
             letterSpacing: '-0.64px',
         },
+        introtext: {
+            color: darkGrey,
+            fontFamily: fontFamily,
+            fontSize: '20px',
+            fontWeight: 400,
+            lineHeight: 'normal',
+            letterSpacing: '-0.64px',
+        },
     },
-
+   
 });
+
 
 export default theme;
 
