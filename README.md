@@ -42,15 +42,19 @@ This project is a Single Page Application built using Next.js and React, along w
 
 -Solution: The function getColor could not read the SDG info because it came back as a string, and it needed to be a number(integer) according to the getColor documentation. The issue was resolve by passing a parseInt.
 
-## Possible improovements:
+## Possible improvements:
 
 1. **Directly connect the SVG files from the API.**
 2. **Dive deeper into creating more cypress tests.**
 3. **Further optimize website for accesibility and performance.**
-4. **Testing more designs in figma for displaying the data to improove user readability.**
+4. **Testing more designs in figma for displaying the data to improve user readability.**
 5. **Adding the respective color displayed in the rating field of the list in the card component.**
 
 
-## Here is a Figma file of a very quick visualisation maquette I did for the website: `https://www.figma.com/design/MvGC4HhpfWQ07nsifv8tSy/card_maquette?m=dev&node-id=0%3A1&t=uDGkJz3uxDw2Uuyz-1`
+## Here is a Figma file of a very quick visualisation maquette I did for the website: 
 
-## Here is the online webpage deployed in vercel: `https://technical-asignment-elenags.vercel.app/`
+`https://www.figma.com/design/MvGC4HhpfWQ07nsifv8tSy/card_maquette?m=dev&node-id=0%3A1&t=uDGkJz3uxDw2Uuyz-1`
+
+## Here is the online webpage deployed in vercel: 
+
+`https://technical-asignment-elenags.vercel.app/`
